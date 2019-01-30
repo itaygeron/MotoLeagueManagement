@@ -1,0 +1,18 @@
+motoLM DB:
+
+Tables:
+
+Users:
+User {userId, username, password}
+Roles {basic, manager}
+UserRoles {userId, role}
+
+Competitions:
+Riders {riderId, firstName, lastName, dateOfBirth, phoneNo}
+Motorbikes{bikeId, bikeType, engine,...}
+Categories {categoryId, categoryName}
+Courses {courseId, courseName}
+TourDetails {courseId, tourDate}
+RiderMotorbike {riderID, bikeId}
+RiderCategories {riderId, categoryId}
+Results {riderId, bikeId, categoryId, courseId, tourDate, result, position}
